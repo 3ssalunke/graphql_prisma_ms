@@ -1,0 +1,37 @@
+{
+  "name": "graphql-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Suraj Salunke",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "generate": "graphql-codegen --config codegen.yml"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.21.5",
+    "@graphql-codegen/typescript": "1.22.3",
+    "@graphql-codegen/typescript-resolvers": "1.19.4",
+    "@types/dotenv-safe": "^8.1.1",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.33",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "prisma": "^2.26.0",
+    "ts-jest": "^26.5.3",
+    "ts-node": "^9.1.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.26.0",
+    "apollo-server": "^2.25.2",
+    "dotenv-safe": "^8.2.0",
+    "graphql": "^15.5.1"
+  }
+}
